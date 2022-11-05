@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetCETIS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/netcetis.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html"><b>NetCETIS</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registro</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Otras opciones
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+                <a class="dropdown-item" href="configuracion.html">Configuración</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Cerrar sesión</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="container">
+      
+      <div class="row" style="margin-top: 20px; margin-bottom:20px;">
+        <div class="col-12">
+          <div class="card" style="width: 100%;">
+            <img src="img/img01.jpg" class="card-img-top" alt="Home Office">
+            <div class="card-body">
+              <h5 class="card-title">Luis C. Santillán  <small class="float-right" style="color: #baadb1;">10 min Ago</small></h5>
+              <p class="card-text">
+                El home office, también conocido en <a href="#">#Mexico</a> como <a href="#">#teletrabajo</a>, es una modalidad laboral en la que los trabajadores pueden realizar sus actividades profesionales vía remota.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="img/haha.svg" alt="icono de wow" width="11%">
+                <img src="img/like.png" alt="icono de like" width="16%" style="margin-left: -6%;">
+                <img src="img/wow.png" alt="icono de wow" width="10%" style="margin-left: -6%;">
+                <span id="reactions">87</span>
+              </li>
+              <li class="list-group-item" style="padding: 0px;">
+                <div class="accordion" id="accordionExample">
+                  <div class="card" style="border: 0px;">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          3 Comentarios
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body" style="padding: 0px;">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <small><b>Juan Perez</b></small><br>
+                                Si, el home office se hizo muy popular con la pandemia de COVID-19
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <small><b>Selene Torres</b></small><br>
+                                No estoy de acuerdo con el home office porque la gente es muy floja.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <small><b>Javier García</b></small><br>
+                                El home office tiene la ventaja de trabajo por objetivos, puedes planear tu tiempo a tu manera.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a id="like">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                Me gusta
+              </a>
+              <a id="comment">
+                <span class="float-right"> 
+                  <i class="fa fa-comment-o fa-2" aria-hidden="true"></i> 
+                  Comentar
+                </span> 
+              </a>
+              <textarea id="comentario" rows="2" placeholder="Teclea tu comentario" style="margin-top:15px; width:100%;display: none;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px; margin-bottom:20px;">
+        <div class="col-12">
+          <div class="card" style="width: 100%;">
+            <iframe width="100%" src="https://www.youtube.com/embed/AnGMfS_9Fmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">María Lopez G.  <small class="float-right" style="color: #baadb1;">10 min Ago</small></h5>
+              <p class="card-text">
+                UEMSTIS (DGETI) .Conoce aquí todo lo que te ofrecen los CETis y CBTis de la UEMSTIS (antes DGETI).
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="img/haha.svg" alt="icono de wow" width="11%">
+                <img src="img/like.png" alt="icono de like" width="16%" style="margin-left: -6%;">
+                <img src="img/wow.png" alt="icono de wow" width="10%" style="margin-left: -6%;">
+                <span id="reactions2">15</span>
+              </li>
+              <li class="list-group-item" style="padding: 0px;">
+                <div class="accordion" id="accordionExample2">
+                  <div class="card" style="border: 0px;">
+                    <div class="card-header" id="headingOne2">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          2 Comentarios
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordionExample2">
+                      <div class="card-body" style="padding: 0px;">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <small><b>Luis Hernández</b></small><br>
+                                Muy buena explicación de CETIS y CBTIS.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <small><b>Claudia Rodriguez</b></small><br>
+                                Me hubiera gustado que explicaran los planes de estudios y comparativas.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a id="like2">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                Me gusta
+              </a>
+              <a id="comment2">
+                <span class="float-right"> 
+                  <i class="fa fa-comment-o fa-2" aria-hidden="true"></i> 
+                  Comentar
+                </span> 
+              </a>
+              <textarea id="comentario" rows="2" placeholder="Teclea tu comentario" style="margin-top:15px; width:100%;display: none;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px; margin-bottom:20px;">
+        <div class="col-12">
+          <div class="card" style="width: 100%;">
+            <img src="img/programacion.jpg" class="card-img-top" alt="Home Office">
+            <div class="card-body">
+              <h5 class="card-title">Maestra Mara Hdez. <small class="float-right" style="color: #baadb1;">44 min Ago</small></h5>
+              <p class="card-text">
+                Programación es relevante porque: contribuye a la formación de personas capaces de integrarse a un mercado laboral dinámico y de alta demanda, que esta a la vanguardia en el uso de la tecnología y que contribuye a la transformación digital de los sectores productivos en el país.  <a href="#">CETIS107</a>
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="img/haha.svg" alt="icono de wow" width="11%">
+                <img src="img/like.png" alt="icono de like" width="16%" style="margin-left: -6%;">
+                <img src="img/wow.png" alt="icono de wow" width="10%" style="margin-left: -6%;">
+                <span id="reactions3">87</span>
+              </li>
+              <li class="list-group-item" style="padding: 0px;">
+                <div class="accordion" id="accordionExample3">
+                  <div class="card" style="border: 0px;">
+                    <div class="card-header" id="headingOne3">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          3 Comentarios
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3" data-parent="#accordionExample">
+                      <div class="card-body" style="padding: 0px;">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <small><b>Juan López</b></small><br>
+                                La carrera de programación es la más completa del CETIS.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <small><b>Luis Manuel Fernández</b></small><br>
+                                No me gusta programación 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <small><b>Javier Manjarrez</b></small><br>
+                                La programación de backend es la mejor.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a id="like3">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                Me gusta
+              </a>
+              <a id="comment3">
+                <span class="float-right"> 
+                  <i class="fa fa-comment-o fa-2" aria-hidden="true"></i> 
+                  Comentar
+                </span> 
+              </a>
+              <textarea id="comentario3" rows="2" placeholder="Teclea tu comentario" style="margin-top:15px; width:100%;display: none;"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
